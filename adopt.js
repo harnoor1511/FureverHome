@@ -23,13 +23,15 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
+        const existingMessage = animalsContainer.querySelector(".no-animals-message");
         if (visibleCards === 0) {
-            const noAnimalsMessage = document.createElement("p");
-            noAnimalsMessage.textContent = "No animal found!";
-            noAnimalsMessage.className = "no-animals-message";
-            animalsContainer.appendChild(noAnimalsMessage);
+            if (!existingMessage) {
+                const noAnimalsMessage = document.createElement("p");
+                noAnimalsMessage.textContent = "No animal found!";
+                noAnimalsMessage.className = "no-animals-message";
+                animalsContainer.appendChild(noAnimalsMessage);
+            }
         } else {
-            const existingMessage = animalsContainer.querySelector(".no-animals-message");
             if (existingMessage) {
                 existingMessage.remove();
             }
@@ -54,7 +56,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
     filterPets();
 });
-
-    function redirect(){
-        location.href="adoptPet.html"
-    }
