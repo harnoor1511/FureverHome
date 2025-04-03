@@ -1,0 +1,53 @@
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    justify-content: center;
+}
+.main{
+    margin-top: 10px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 695px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+}
+.main-1{
+    font-size: 60px;
+}
+.tick-pic{
+    padding-top: 15px;
+    width: 120px;
+}
+.main-3{
+    display: flex;
+    justify-content: center;
+}
+.text1{
+    margin-left: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 0px;
+}
+.text2{
+    width: 699px;
+    margin-left: 100px;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.home-btn{ 
+    cursor: pointer;
+    font-size: 35px;
+    font-weight: bold;
+    width: 275px;
+    height: 60px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(206, 79, 25);
+}
