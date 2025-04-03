@@ -1,0 +1,116 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main {
+    max-width: 800px;
+    width: 100%;
+    min-height: 2100px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    overflow-x: hidden;
+  }
+  
+  @media screen and (max-width: 820px) {
+    .main {
+      width: 95%;
+    }
+  }
+  
+  .picture{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items:center;
+  }
+  
+  .Form-pic{
+      width: 800px;
+      border-radius: 10px 10px 0px 0px;
+  }
+  
+  .Info-person{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 20px;
+  }
+  
+  .heading-text{
+      margin: 0;
+  }
+  .head-text{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bolder;
+      font-size: 40px;
+      padding: 0px;
+      margin-top: 10px;
+  }
+  
+  
+  .align{
+      font-size: 20px;
+  }
+  
+  .align1{
+      font-size: 30px;
+      font-weight: bold;
+  }
+  .box{
+      width: 375px;
+      height: 30px;
+      border-radius: 5px;
+      display: flex;
+      gap: 10px;
+      flex: 1;
+      border: 1px solid rgba(0, 0, 0, 0.29);
+  }
+  .box1{
+      width: 370px;
+      height: 30px;
+  }
+  
+  .select{
+      width: 200px;
+      height: 27px;
+      border-radius: 5px;
+  
+  }
+  
+  .one1{
+      position: relative;
+      left: 280px;
+  }
+  
+  .one2{
+      position: relative;
+      left: 345px;
+  }
+  
+  .button{
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      top: 30px;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .button-in{
+      width: 300px;
+      height: 40px;
+      font-size: 20px;
+      border-radius: 5px;
+      border:none;
+      background-color: rgb(128, 226, 95);
+      cursor: pointer;
+  }
