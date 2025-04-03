@@ -1,0 +1,109 @@
+.main {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    padding-bottom: 50px;
+    background-color: rgba(250, 241, 200, 0.453);
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.head-text {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.filter {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 198px;
+    width: 250px;
+    height: 210px;
+    left: 10px;
+    padding: 10px;
+    background-color: rgb(138, 121, 121);
+}
+.clear-filter{
+    border: none;
+    background-color: rgb(138, 121, 121);
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 10px;
+}
+.pet-type, .state {
+    margin-bottom: 15px;
+}
+
+.input1, .input2 {
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+}
+
+
+.animals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 300px;
+}
+
+.animal-card {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    height: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.069);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.no-animals-message{
+    font-size: 40px;
+}
+.animal-image {
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.animal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.animal-info {
+    margin-top: 10px;
+}
+
+.animal-name, .animal-gender, .animal-state {
+    margin-bottom: 5px;
+}
+
+.animal-adopt {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.adopt-btn {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: rgb(138, 121, 121);
+    border-radius: 30px;
+    cursor: pointer;
+}
