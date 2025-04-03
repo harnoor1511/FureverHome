@@ -1,0 +1,128 @@
+.heading-bg {
+    background-image: url('pics/bdogcare.jpg');
+    background-size: cover;
+    background-position: center 20%;
+    height: 400px;
+    
+    background-color: rgba(14, 23, 27, 0);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 0px 0px;
+
+}
+.heading-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px); 
+    z-index: 0;
+}
+.proj{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+.ppic{
+    width: 170px;               
+    height: 170px;                     
+    overflow: hidden;           
+    display: flex;
+    justify-content: center;    
+    align-items: center; 
+    flex:2;
+    width: 467px;
+    background-color: rgb(115, 188, 201);
+}
+.full{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex:1;
+    align-items: center;
+    height: 500px;
+    background-color: rgb(115, 188, 201);
+    width: 300px;
+    box-shadow: 10px 10px 5px rgba(109, 112, 113, 0.368);
+    margin-right: 40px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 25px;
+}
+.ppic3{
+    width: 170px;               
+    height: 170px;                     
+    overflow: hidden;           
+    display: flex;
+    justify-content: center;    
+    align-items: center; 
+    flex:2;
+    width: 467px;
+    background-color: rgb(219, 195, 240);
+}
+.dis{
+    background-color:  rgb(78, 66, 66);
+    flex: 1;
+    width: 467px;
+    height: 50px;
+}
+.first{
+    width: 370px;
+}
+.full3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex:1;
+    align-items: center;
+    height: 500px;
+    background-color: rgb(219, 195, 240);
+    width: 450px;
+    box-shadow: 10px 10px 5px rgba(109, 112, 113, 0.368);
+    margin-right: 40px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.full2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex:1;
+    align-items: center;
+    height: 500px;
+    background-color: rgb(248, 192, 25);
+    width: 450px;
+    box-shadow: 10px 10px 5px rgba(109, 112, 113, 0.368);
+    margin-right: 40px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.ppic2{
+    width: 170px;               
+    height: 170px;                     
+    overflow: hidden;           
+    display: flex;
+    justify-content: center;    
+    align-items: center; 
+    flex:2;
+    width: 467px;
+    background-color: rgb(241, 214, 134);
+}
+.dis{
+    color: #DDD0C8;
+    text-align: center;
+}
+.heading{
+    font-size: 50px;
+    color: white;
+    position: relative; 
+    z-index: 1;
+}

@@ -1,0 +1,58 @@
+
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+    min-height: 1rem;
+}
+
+.btn {
+    background: #af7d4c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 290px;
+    margin-left: 90px;
+    margin-top: 50px;
+}
+
+.btn:hover {
+    background: #ae4d23;
+}
+.whole{
+    display: flex;
+    margin-top: 110px;
+    margin-left:300px;
+    width: 850px;
+    background-color: white;
+    box-shadow: 10px 10px 5px rgba(109, 112, 113, 0.368);
+}
+.leftbox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    background-color: rgb(237, 219, 173);
+}
+.imag{
+    width: 430px;
+}
+.rightbox{
+    background-color: white;
+    width: 400px;
+    padding-top: 70px;
+    font-size: 20px;
+}
+.grp,.supbtn,.txt{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.lg{
+    text-decoration: underline;
+}
+.signup-link{
+    margin-top: 70px;
+    margin-left: 30px;
+}

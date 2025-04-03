@@ -1,0 +1,71 @@
+
+.sbar { 
+    height: 4px; 
+    background: #ddd;
+}
+.sbar.weak { 
+    background: red; 
+    width: 33%; 
+}
+.sbar.medium { 
+    background: orange; 
+    width: 66%; 
+}
+.sbar.strong { 
+    background: green; 
+    width: 100%; 
+}
+.pswderror { 
+    color: rgb(8, 8, 8); 
+    font-size: 0.8rem; 
+}
+.whole{
+    display: flex;
+    margin-top: 110px;
+    margin-left:300px;
+    width: 850px;
+    max-width: 850px;
+    height: 600px;
+    max-height: 600px;
+    background-color: white;
+    box-shadow: 10px 10px 5px rgba(109, 112, 113, 0.368);
+}
+.leftbox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    background-color: rgb(237, 219, 173);
+}
+.imag{
+    width: 430px;
+}
+.rightbox{
+    background-color: white;
+    width: 400px;
+    padding-top: 0px;
+    max-height: 600px;
+}
+.grp,.supbtn,.txt{
+    margin-top: 27px;
+    margin-left: 30px;
+}
+.lg{
+    text-decoration: underline;
+}
+.supbtn{
+    border-radius: 22px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(237, 219, 173);
+    padding: 15px;
+}
+.supbtn:hover{
+    background-color: rgb(203, 107, 29);
+}
+#nameerror,#phoneerror,#emailerror{
+    font-size: 0.7rem;
+    color: red;
+}

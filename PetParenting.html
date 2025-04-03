@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FureverHome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ppstyle.css">
+    <script src="auth-display.js">
+        window.addEventListener('scroll', () => {
+        document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="left">
+            <div class="logo">
+                FureverHome
+            </div>
+        </div>
+        <div class="right">
+            <div class="links">
+                <a href="home.html">Home</a>
+            </div>
+            <div class="links">
+                <a href="adopt.html"> Adopt</a>
+            </div>
+            <div class="links">
+                <a href="PetParenting.html"> Pet Parenting</a>
+            </div>
+            <div class="links">
+                <a href="contact.html"> Contact</a>
+            </div>
+            <div class="user-section">
+                <div id="userDisplay" style="display: none;">
+                    👤 <span id="usernameDisplay"></span>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="heading-bg">
+            <div class="heading">
+                Pet Care Blogs & Resources
+            </div>
+        </div>
+        
+        <div class="proj">
+            <!-- Row 1 -->
+            <div class="full">
+                <div class="ppic">
+                    <img class="first" src="pics/1.jpg" alt="Puppy Training">
+                </div>
+                <div class="dis">
+                    <h3><a href="https://youtu.be/ckWzAqJEhKg?si=KaU1arOdSYDKvyJz" target="_blank">Essential Puppy Training</a></h3>
+                    <b>Description: </b>Complete guide to housebreaking and basic commands for your new puppy.
+                </div>
+            </div>
+            
+            <div class="full2">
+                <div class="ppic2">
+                    <img class="first" src="pics/2.jpeg" alt="Cat Behavior">
+                </div>
+                <div class="dis">
+                    <h3><a href="https://www.rd.com/list/how-to-decode-your-cats-behavior/" target="_blank">Understanding Cat Behavior</a></h3>
+                    <b>Description: </b>Decode your cat's mysterious behaviors and body language signals.
+                </div>
+            </div>
+            
+            <!-- Row 2 -->
+            <div class="full3">
+                <div class="ppic3">
+                    <img class="first" src="pics/3.webp" alt="Dog Nutrition">
+                </div>
+                <div class="dis">
+                    <h3><a href="https://youtu.be/iux2QpivRYA?si=dNSkwOodnHXcPU5k" target="_blank">Dog Nutrition Guide</a></h3>
+                    <b>Description: </b>Learn about balanced diets for dogs of all ages and breeds.
+                </div>
+            </div>
+            
+            <div class="full">
+                <div class="ppic">
+                    <img class="first" src="pics/4.jpg" alt="Pet Grooming">
+                </div>
+                <div class="dis">
+                    <h3><a href="https://charmainebryan.com/10-grooming-tips-every-professional-should-know/" target="_blank">Professional Grooming Tips</a></h3>
+                    <b>Description: </b>Step-by-step guide to grooming different coat types at home.
+                </div>
+            </div>
+            
+            <!-- Row 3 -->
+            <div class="full2">
+                <div class="ppic2">
+                    <img class="first" src="pics/5.jpeg" alt="Senior Pets">
+                </div>
+                <div class="dis">
+                    <h3><a href="https://youtu.be/F7TQl6s7C-E?si=y5cErEVaZorVLR-y" target="_blank">Caring for Senior Pets</a></h3>
+                    <b>Description: </b>Special care requirements for aging dogs and cats.
+                </div>
+            </div>
+            
+            <div class="full3">
+                <div class="ppic3">
+                    <img class="first" src="pics/6.jpg" alt="Pet First Aid">
+                </div>
+                <div class="dis">
+                    <h3><a href="https://www.zoetispetcare.com/blog/article/pet-first-aid?msockid=1cb9958679826da0371e80aa78d56cc4" target="_blank">Pet First Aid Basics</a></h3>
+                    <b>Description: </b>Essential first aid techniques every pet owner should know.
+                </div>
+            </div>
+            
+            <!-- Row 4 -->
+            <div class="full">
+                <div class="ppic">
+                    <img class="first" src="pics/7.jpg" alt="Dog Sports">
+                </div>
+                <div class="dis">
+                    <h3><a href="https://youtu.be/VbtxFLemEL0?si=TXDyojEOXZ8Mw1ss" target="_blank">Introduction to Dog Sports</a></h3>
+                    <b>Description: </b>Explore agility, flyball and other fun activities with your dog.
+                </div>
+            </div>
+            
+            <div class="full2">
+                <div class="ppic2">
+                    <img class="first" src="pics/8.jpg" alt="Cat Enrichment">
+                </div>
+                <div class="dis">
+                    <h3><a href="https://www.thesprucepets.com/enrichment-ideas-for-your-cat-4588682" target="_blank">Cat Enrichment Ideas</a></h3>
+                    <b>Description: </b>Creative ways to keep your indoor cat stimulated and happy.
+                </div>
+            </div>
+            
+            <!-- Row 5 -->
+            <div class="full3">
+                <div class="ppic3">
+                    <img class="first" src="pics/9.png" alt="Puppy Socialization">
+                </div>
+                <div class="dis">
+                    <h3><a href="https://youtu.be/HCNcq7KYANc?si=TvVNFk0j0HxMocxP" target="_blank">Puppy Socialization Guide</a></h3>
+                    <b>Description: </b>Critical socialization periods and how to properly socialize your pup.
+                </div>
+            </div>
+            
+            <div class="full">
+                <div class="ppic">
+                    <img class="first" src="pics/10.webp" alt="Exotic Pets">
+                </div>
+                <div class="dis">
+                    <h3><a href="https://www.healingpawsvet.com/caring-for-exotic-pets-essential-tips-for-a-healthy-life/" target="_blank">Exotic Pet Care</a></h3>
+                    <b>Description: </b>Special considerations for rabbits, birds, reptiles and small mammals.
+                </div>
+            </div>
+            
+            <!-- Row 6 -->
+            <div class="full2">
+                <div class="ppic2">
+                    <img class="first" src="pics/11.jpeg" alt="Dog Anxiety">
+                </div>
+                <div class="dis">
+                    <h3><a href="https://youtu.be/1XheCwVPifg?si=mox-BixaZeqf5-Kq" target="_blank">Managing Dog Anxiety</a></h3>
+                    <b>Description: </b>Techniques to help dogs with separation anxiety and noise phobias.
+                </div>
+            </div>
+            
+            <div class="full3">
+                <div class="ppic3">
+                    <img class="first" src="pics/12.jpg" alt="Cat Health">
+                </div>
+                <div class="dis">
+                    <h3><a href="https://www.thesprucepets.com/signs-your-cat-is-sick-4165142#:~:text=Common%20signs%20that%20a%20cat%20is%20sick%20include,for%20cats%20and%20what%20situations%20are%20an%20emergency." target="_blank">Feline Health Warning Signs</a></h3>
+                    <b>Description: </b>Subtle symptoms that indicate your cat needs veterinary attention.
+                </div>
+            </div>
+            
+            <!-- Row 7 -->
+            <div class="full">
+                <div class="ppic">
+                    <img class="first" src="pics/13.jpg" alt="Dog Travel">
+                </div>
+                <div class="dis">
+                    <h3><a href="https://youtu.be/R0DtBVpufU0?si=BfC5pQeg4n8LBukt" target="_blank">Traveling With Your Dog</a></h3>
+                    <b>Description: </b>Complete guide to road trips and air travel with pets.
+                </div>
+            </div>
+            
+            <div class="full2">
+                <div class="ppic2">
+                    <img class="first" src="pics/14.jpg" alt="Pet Adoption">
+                </div>
+                <div class="dis">
+                    <h3><a href="https://homegrown.co.in/homegrown-voices/heart-warming-stories-of-18-indians-who-adopted-or-rescued-their-pets" target="_blank">Adoption Success Stories</a></h3>
+                    <b>Description: </b>Heartwarming tales of rescued pets and their new families.
+                </div>
+            </div>
+            
+            <!-- Row 8 -->
+            <div class="full3">
+                <div class="ppic3">
+                    <img class="first" src="pics/15.jpeg" alt="Dog Breeds">
+                </div>
+                <div class="dis">
+                    <h3><a href="https://youtu.be/mbcpEcGv_WQ?si=aEwpPfiVFDs4Ij5k" target="_blank">Choosing the Right Dog Breed</a></h3>
+                    <b>Description: </b>Match your lifestyle with the perfect canine companion.
+                </div>
+            </div>
+            
+            <div class="full">
+                <div class="ppic">
+                    <img class="first" src="pics/16.jpg" alt="Cat Training">
+                </div>
+                <div class="dis">
+                    <h3><a href="https://www.rd.com/article/how-to-train-a-cat/#:~:text=Yes%2C%20you%20can%20train%20a%20cat%20to%20come,hour%E2%80%94learning%20how%20to%20train%20a%20cat%20is%20important." target="_blank">Yes, You Can Train Cats!</a></h3>
+                    <b>Description: </b>Fun tricks and useful behaviors to teach your feline friend.
+                </div>
+            </div>
+            
+            <!-- Row 9 -->
+            <div class="full2">
+                <div class="ppic2">
+                    <img class="first" src="pics/17.jpeg" alt="Pet Tech">
+                </div>
+                <div class="dis">
+                    <h3><a href="https://youtu.be/eNxi6ilY0OM?si=tcYAhm1joQ8OI9UX" target="_blank">Best Pet Tech Gadgets</a></h3>
+                    <b>Description: </b>Innovative devices to monitor and entertain your pets.
+                </div>
+            </div>
+            
+            <div class="full3">
+                <div class="ppic3">
+                    <img class="first" src="pics/18.png" alt="Dog Aggression">
+                </div>
+                <div class="dis">
+                    <h3><a href="https://todaysveterinarypractice.com/behavior/aggression-in-dogs-etiology-signalment-and-management/" target="_blank">Managing Dog Aggression</a></h3>
+                    <b>Description: </b>Professional techniques for addressing aggressive behaviors.
+                </div>
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>
