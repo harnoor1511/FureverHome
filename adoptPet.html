@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption Form</title>
+    <link rel="stylesheet" href="adoptPet.css">
+</head>
+<body class="body">
+    <div class="main">
+        <div class="picture">
+            <img src="pics/Form.jpg" class="Form-pic" alt="Adoption Form">
+        </div>
+        <div class="Info-person">
+            <div class="heading-text">
+                <p class="head-text">FureverHome Adoption Application Form</p>
+            </div>
+            <div class="Details">
+                <form id="adoptionForm">
+                    <div class="align">
+                        <label for="pet-name">Name of the Pet*</label>
+                        <br>
+                        <input type="text" id="pet-name" name="pet-name" required class="box">
+                    </div>
+
+                    <p class="align1">Applicant Details</p>
+
+                    <div class="align">
+                        <label for="first-name">Name*</label><br>
+                        <input type="text" id="first-name" name="first-name" required class="box1">
+                        <input type="text" id="last-name" name="last-name" required class="box1">
+                        <p><span>First Name</span>
+                        <span class="one1">Last Name</span></p>
+                    </div>
+
+                    <div class="align">
+                        <label for="age">Age*</label><br>
+                        <input type="number" id="age" name="age" required placeholder="Ex:20" class="box">
+                    </div>
+                    <br>
+                    <div class="align">
+                        <label for="street-address">Address*</label><br>
+                        <div>
+                            <input type="text" id="street-address" name="street-address" required class="box1">
+                            <p>Street Address</p>
+                            <input type="text" id="street-address-2" name="street-address-2" required class="box1">
+                            <p>Street Address Line 2</p>
+
+                            <input type="text" id="city" name="city" required class="box1">
+                            <input type="text" id="state" name="state" required class="box1">
+
+                            <br>
+                            <p><span>City</span>
+                            <span class="one2">State</span></p>
+                        </div>
+                    </div>
+
+                    <div class="align">
+                        <input type="text" id="zip-code" name="zip-code" required class="box" pattern="[0-9]*">
+                        <p><span>Postal/Zip Code</span></p>
+                    </div>
+                    <br>
+                    <div class="align">
+                        <label>I/We live in a*</label>
+                        <br>
+                        <br>
+
+                        <input type="radio" id="single" name="living-situation" value="single Family Home" required>
+                        <label for="single">Single Family Home</label>
+
+                        <br>
+
+                        <input type="radio" id="Twin" name="living-situation" value="Twin">
+                        <label for="Twin">Twin</label>
+
+                        <br>
+
+                        <input type="radio" id="Townhome" name="living-situation" value="Townhome">
+                        <label for="Townhome">Townhome</label>
+
+                        <br>
+
+                        <input type="radio" id="Trailer" name="living-situation" value="Trailer">
+                        <label for="Trailer">Trailer</label>
+
+                        <br>
+
+                        <input type="radio" id="Apartment" name="living-situation" value="Apartment">
+                        <label for="Apartment">Apartment</label>
+
+                        <br>
+
+                        <input type="radio" id="Other" name="living-situation" value="Other">
+                        <label for="Other">Other</label>
+
+                    </div>
+                    <br>
+                    <div class="align">
+                        <label>Do You have another Pet?*</label>
+                        <br>
+                        <input type="radio" id="yes" name="has-pet" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <br>
+                        <input type="radio" id="No" name="has-pet" value="No">
+                        <label for="No">No</label>
+                    </div>
+                    <br>
+                    <div class="align">
+                        <label for="stay">Where does the pet stay (be confined) while you are out?*</label>
+                        <br>
+                        <input type="text" required id="stay" name="stay" class="box">
+                    </div>
+                    <br>
+                    <div class="align">
+                        <label for="discipline">How do you discipline your pets and why? (describe)*</label>
+                        <br>
+                        <input type="text" required id="discipline" name="discipline" class="box">
+                    </div>
+                    <br>
+
+                    <div class="align">
+                        <label>Do you have a regular veterinarian?*</label><br>
+                        <input type="radio" id="Yes-vet" name="has-vet" value="Yes" required>
+                        <label for="Yes-vet">Yes</label>
+                        <br>
+                        <input type="radio" id="No-vet" name="has-vet" value="No">
+                        <label for="No-vet">No</label>
+                    </div>
+                    <br>
+                    <div class="align">
+                        <input type="checkbox" required id="confirm-info">
+                        <label for="confirm-info">I confirm that all the information supplied above is correct and accurate</label>
+                    </div>
+
+                    <hr>
+                    <div class="button">
+                        <button type="submit" class="button-in">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('adoptionForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // You can add form validation here if needed
+            location.href = "thanks.html";
+        });
+    </script>
+</body>
+
+</html>
