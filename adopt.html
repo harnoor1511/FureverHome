@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="auth-display.js"></script> 
+    <link rel="stylesheet" href="adopt.css">
+    <script src="adopt.js"></script>
 </head>
 <body>
     <header class="navbar">
@@ -40,7 +42,877 @@
     </header>
 
     <main>
+            <div  class="main">
+                <div class="heading">
+                    <p class="head-text">Dogs Available For Adoption</p>
+                </div>
+                <div class="filter">
+                    <div>
+                        <button class="clear-filter">🐕‍🦺Clear filter</button>
+                    </div>
+                    <div class="pet-type">
+                            <b>Pet type:</b>
+                            <br>
+                            <select required class="input1" id="petFilter">
+                                <option value="All">All</option>
+                                <option value="Dog">🐶Dog</option>
+                                <option value="Cat">😺Cat</option>
+                            </select>
+                    </div>
         
+                    <div class="state">
+                        <b>State</b>
+                    <select required class="input2" id="stateFilter">
+                        <option value="All">Select State</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                        <option value="Daman and Diu">Daman and Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                <div class="animals">
+                    <div class="animal-card" data-type="Dog" data-state="Rajasthan">
+                        <div class="animal-image">
+                            <img src="pics/dog1.webp" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name" >Luna</div>
+                            <div class="animal-gender">Female</div>
+                            <div class="animal-state">Rajasthan</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
         
+                    <div class="animal-card"  data-type="Cat" data-state="Rajasthan">
+                        <div class="animal-image">
+                            <img src="pics/cat1.webp" alt="Cat">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Oliver</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Maharashtra</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    <div class="animal-card" data-type="Dog" data-state="Maharashtra">
+                        <div class="animal-image">
+                            <img src="pics/dog2.jpeg" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Finn</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Maharashtra</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    <div class="animal-card" data-type="Dog" data-state="Karnataka">
+                        <div class="animal-image">
+                            <img src="pics/dog3.jpeg" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Hazel</div>
+                            <div class="animal-gender">Female</div>
+                            <div class="animal-state">Karnataka</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    <div class="animal-card" data-type="Cat" data-state="Uttar Pradesh">
+                        <div class="animal-image">
+                            <img src="pics/cat2.webp" alt="Cat">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Jasper</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Uttar Pradesh</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    <div class="animal-card" data-type="Dog" data-state="Punjab">
+                        <div class="animal-image">
+                            <img src="pics/dog4.webp" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Ace</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Punjab</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+                    
+        
+                    <div class="animal-card"  data-type="Dog" data-state="Gujarat">
+                        <div class="animal-image">
+                            <img src="pics/dog5.webp" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Ginger</div>
+                            <div class="animal-gender">Female</div>
+                            <div class="animal-state">Gujarat</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    <div class="animal-card" data-type="Dog" data-state="Tamil Nadu">
+                        <div class="animal-image">
+                            <img src="pics/dog6.webp" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Max</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Tamil Nadu</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+                    
+                    <div class="animal-card" data-type="Dog" data-state="West Bengal">
+                        <div class="animal-image">
+                            <img src="pics/dog7.webp" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Coco</div>
+                            <div class="animal-gender">Female</div>
+                            <div class="animal-state">West Bengal</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    <div class="animal-card" data-type="Cat" data-state="West Bengal">
+                        <div class="animal-image">
+                            <img src="pics/cat3.webp" alt="Cat">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Misty</div>
+                            <div class="animal-gender">Female</div>
+                            <div class="animal-state">West Bengal</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    <div class="animal-card" data-type="Dog" data-state="Uttarakhand">
+                        <div class="animal-image">
+                            <img src="pics/dog8.webp" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Loki</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Uttarakhand</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Cat" data-state="Punjab">
+                        <div class="animal-image">
+                            <img src="pics/cat4.webp" alt="Cat">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Toby</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Punjab</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Kerala">
+                        <div class="animal-image">
+                            <img src="pics/dog9.webp" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Bella</div>
+                            <div class="animal-gender">Female</div>
+                            <div class="animal-state">Kerala</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Madhya Pradesh">
+                        <div class="animal-image">
+                            <img src="pics/dog10.webp" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Rocky</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Madhya Pradesh</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Cat" data-state="Himachal Pradesh">
+                        <div class="animal-image">
+                            <img src="pics/cat5.jpg" alt="Cat">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Daisy</div>
+                            <div class="animal-gender">Female</div>
+                            <div class="animal-state">Himachal Pradesh</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Goa">
+                        <div class="animal-image">
+                            <img src="pics/dog11.webp" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Milo</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Goa</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Cat" data-state="Assam">
+                        <div class="animal-image">
+                            <img src="pics/cat6.webp" alt="Cat">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Smokey</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Assam</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Telangana">
+                        <div class="animal-image">
+                            <img src="pics/dog12.webp" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Apollo</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Telangana</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Jharkhand">
+                        <div class="animal-image">
+                            <img src="pics/dog13.webp" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Rosie</div>
+                            <div class="animal-gender">Female</div>
+                            <div class="animal-state">Jharkhand`</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Arunachal Pradesh">
+                        <div class="animal-image">
+                            <img src="pics/dog14.jpeg" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Rex</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Arunachal Pradesh</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Cat" data-state="Himachal Pradesh">
+                        <div class="animal-image">
+                            <img src="pics/cat7.jpeg" alt="Cat">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Trixie</div>
+                            <div class="animal-gender">Female</div>
+                            <div class="animal-state">Himachal Pradesh</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Mizoram">
+                        <div class="animal-image">
+                            <img src="pics/dog15.jpeg" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Diesel</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Mizoram</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Meghalaya">
+                        <div class="animal-image">
+                            <img src="pics/dog16.webp" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Nova</div>
+                            <div class="animal-gender">Female</div>
+                            <div class="animal-state">Meghalaya</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Cat" data-state="Odisha">
+                        <div class="animal-image">
+                            <img src="pics/cat8.jpeg" alt="Cat">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Pearl</div>
+                            <div class="animal-gender">Female</div>
+                            <div class="animal-state">Odisha</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Delhi">
+                        <div class="animal-image">
+                            <img src="pics/dog17.webp" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Hunter</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Delhi</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Andhra Pradesh">
+                        <div class="animal-image">
+                            <img src="pics/dog18.jpeg" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Charlie</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Andhra Pradesh</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Puducherry">
+                        <div class="animal-image">
+                            <img src="pics/dog19.webp" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Ruby</div>
+                            <div class="animal-gender">Female</div>
+                            <div class="animal-state">Puducherry</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Cat" data-state="Chhattisgarh">
+                        <div class="animal-image">
+                            <img src="pics/cat9.jpeg" alt="Cat">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Willow</div>
+                            <div class="animal-gender">Female</div>
+                            <div class="animal-state">Chhattisgarh</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Jharkhand">
+                        <div class="animal-image">
+                            <img src="pics/dog20.webp" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Simba</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Jharkhand</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Maharashtra">
+                        <div class="animal-image">
+                            <img src="pics/dog21.jpeg" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Zeus</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Maharashtra</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Cat" data-state="Sikkim">
+                        <div class="animal-image">
+                            <img src="pics/cat10.jpeg" alt="Cat">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Oreo</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Sikkim</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Kerala">
+                        <div class="animal-image">
+                            <img src="pics/dog22.jpeg" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Pebbles</div>
+                            <div class="animal-gender">Female</div>
+                            <div class="animal-state">Kerala</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Tamil Nadu">
+                        <div class="animal-image">
+                            <img src="pics/dog23.webp" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Thor</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Tamil Nadu</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Cat" data-state="Tripura">
+                        <div class="animal-image">
+                            <img src="pics/cat11.webp" alt="Cat">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Angel</div>
+                            <div class="animal-gender">Female</div>
+                            <div class="animal-state">Tripura</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Uttarakhand">
+                        <div class="animal-image">
+                            <img src="pics/dog24.jpeg" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Bruno</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Uttarakhand</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Cat" data-state="Haryana">
+                        <div class="animal-image">
+                            <img src="pics/cat12.webp" alt="Cat">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Scout</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Haryana</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Maharashtra">
+                        <div class="animal-image">
+                            <img src="pics/dog25.webp" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Tyson</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Maharashtra</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Karnataka">
+                        <div class="animal-image">
+                            <img src="pics/dog26.jpeg" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Angel</div>
+                            <div class="animal-gender">Female</div>
+                            <div class="animal-state">Karnataka</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Cat" data-state="Manipur">
+                        <div class="animal-image">
+                            <img src="pics/cat13.webp" alt="Cat">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Maple</div>
+                            <div class="animal-gender">Female</div>
+                            <div class="animal-state">Manipur</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Gujarat">
+                        <div class="animal-image">
+                            <img src="pics/dog27.jpeg" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Shadow</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Gujarat</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Uttar Pradesh">
+                        <div class="animal-image">
+                            <img src="pics/dog28.webp" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Dexter</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Uttar Pradesh</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Cat" data-state="Nagaland">
+                        <div class="animal-image">
+                            <img src="pics/cat14.jpeg" alt="Cat">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Tiger</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Nagaland</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Punjab">
+                        <div class="animal-image">
+                            <img src="pics/dog29.webp" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Bolt</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Punjab</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Assam">
+                        <div class="animal-image">
+                            <img src="pics/dog30.jpeg" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Leo</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Assam</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Cat" data-state="Chandigarh">
+                        <div class="animal-image">
+                            <img src="pics/cat15.jpeg" alt="Cat">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Mochi</div>
+                            <div class="animal-gender">Female</div>
+                            <div class="animal-state">Chandigarh</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Himachal Pradesh">
+                        <div class="animal-image">
+                            <img src="pics/dog31.jpg" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Pearl</div>
+                            <div class="animal-gender">Female</div>
+                            <div class="animal-state">Himachal Pradesh</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Cat" data-state="Andhra Pradesh">
+                        <div class="animal-image">
+                            <img src="pics/cat16.webp" alt="Cat">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Tom</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Andhra Pradesh</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Bihar">
+                        <div class="animal-image">
+                            <img src="pics/dog32.webp" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Rusty</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Bihar</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Telangana">
+                        <div class="animal-image">
+                            <img src="pics/dog33.jpeg" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Champ</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Telangana</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Haryana">
+                        <div class="animal-image">
+                            <img src="pics/dog34.jpeg" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Oscar</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Haryana</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="animal-card" data-type="Dog" data-state="Mizoram">
+                        <div class="animal-image">
+                            <img src="pics/dog35.jpeg" alt="Dog">
+                        </div>
+                        <div class="animal-info">
+                            <div class="animal-name">Zorro</div>
+                            <div class="animal-gender">Male</div>
+                            <div class="animal-state">Mizoram</div>
+                        </div>
+                        <hr>
+                        <div class="animal-adopt">
+                            <button class="adopt-btn" onclick="redirect();">Adopt me</button>
+                        </div>
+                    </div>
+        
+                </div>
+                </div>
+            </div>
     </main>
 </body>
